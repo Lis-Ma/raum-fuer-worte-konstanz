@@ -1,5 +1,7 @@
 ---
 title: "Kontakt"
+hero_title: "Worte über Worte"
+hero_image: "images/blog-hero.jpg"
 ---
 
 Haben Sie Interesse an einer Zusammenarbeit, einem Vortrag oder Workshop?  
