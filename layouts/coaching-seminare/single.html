@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+<section class="content-section offer-detail">
+  <h1>{{ .Title }}</h1>
+
+  {{ .Content }} {{ partial "cta.html" . }}
+</section>
+
+{{ end }}

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<section class="content-section contact">
+  <h1>{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <div class="contact-methods">
+    <p>
+      <strong>E-Mail:</strong>
+      <a
+        href="mailto:deine-email@example.com?subject=Anfrage&body=Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20Leistungen."
+      >
+        deine-email@example.com
+      </a>
+    </p>
+
+    <!-- Optional: Kalender- oder Buchungslink -->
+    <p>
+      <strong>Termin buchen:</strong>
+      <a href="https://calendly.com/dein-link" target="_blank" rel="noopener"
+        >Hier klicken</a
+      >
+    </p>
+  </div>
+</section>
+
+{{ end }}

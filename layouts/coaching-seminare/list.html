@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<section class="content-section coaching-overview">
+  <h1>{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <div class="offer-grid">
+    {{ range .Pages }}
+    <div class="offer-card">
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+      <a href="{{ .RelPermalink }}">Mehr erfahren →</a>
+    </div>
+    {{ end }}
+  </div>
+
+  {{ partial "cta.html" . }}
+</section>
+
+{{ end }}

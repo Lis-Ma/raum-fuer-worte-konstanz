@@ -1,0 +1,29 @@
+<div
+  id="hero"
+  class="hero-header"
+  style="background-image: url('{{ .Params.hero_image }}');"
+>
+  <!-- <div
+    class="hero-inner"
+    style="background-image: url('{{ .Params.hero_image }}');"
+  >
+     <h1 class="hero-animation">
+      Raum für
+      <span class="soft-words">
+        <span>Worte</span>
+        <span>Freude</span>
+        <span>Trauer</span>
+        <span>Perspektive</span>
+      </span>
+    </h1> 
+    <h1>{{ .Params.hero_title }}</h1>
+    <p>{{ .Params.hero_text | safeHTML }}</p>
+  </div>
+ </div> -->
+
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <p class="hero-title">{{ .Params.hero_title }}</p>
+    <p>{{ .Params.hero_text }}</p>
+  </div>
+</div>

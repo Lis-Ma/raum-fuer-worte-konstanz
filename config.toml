@@ -1,0 +1,12 @@
+baseURL = "/"
+languageCode = "de-de"
+title = "Raum für Worte"
+theme = "sundai-lite"
+
+relativeURLs = true
+canonifyURLs = false
+
+[params]
+  subtitle = "Reden, die bewegen – über Identität, Mutterschaft und Leben"
+  accent = "#c9a66b"
+  bg = "#fefaf2"

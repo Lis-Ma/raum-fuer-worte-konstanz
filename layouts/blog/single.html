@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section class="content-section blog-article">
+  <h1>{{ .Title }}</h1>
+  <p class="blog-date">{{ .Date.Format "02.01.2006" }}</p>
+  {{ with .Params.tags }}
+  <p class="blog-tags">{{ delimit . ", " }}</p>
+  {{ end }}
+
+  <article>{{ .Content }}</article>
+
+  <p><a href="/blog/">← zurück zur Übersicht</a></p>
+</section>
+
+{{ end }}

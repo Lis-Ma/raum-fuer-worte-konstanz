@@ -1,0 +1,21 @@
+{{ define "main" }} {{ partial "hero.html" . }}
+<div>
+  <h1>{{ .Title }}</h1>
+
+  <div class="content-section blog-overview">
+    {{ .Content }}
+    <ul class="blog-list">
+      {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="blog-date">{{ .Date.Format "02.01.2006" }}</span>
+        {{ with .Params.tags }}
+        <span class="blog-tags">{{ delimit . ", " }}</span>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
+{{ end }}

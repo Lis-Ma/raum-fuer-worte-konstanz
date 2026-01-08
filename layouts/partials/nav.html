@@ -1,0 +1,23 @@
+<nav class="main-nav">
+  <ul>
+    <li class="{{ if eq .RelPermalink "/" }}active{{ end }}">
+      <a href="/">Start</a>
+    </li>
+  
+    <li class="{{ if eq .RelPermalink "/reden/" }}active{{ end }}">
+      <a href="/reden/">Reden</a>
+    </li>
+    <li class="{{ if eq .RelPermalink "/coaching-seminare/" }}active{{ end }}">
+      <a href="/coaching-seminare/">Coaching & Seminare</a>
+    </li>
+    <li class="{{ if eq .RelPermalink "/about/" }}active{{ end }}">
+      <a href="/about/">Über mich</a>
+    </li>
+    <li class="{{ if eq .RelPermalink "/blog/" }}active{{ end }}">
+      <a href="/blog/">Blog</a>
+    </li>
+    <li class="{{ if eq .RelPermalink "/kontakt/" }}active{{ end }}">
+      <a href="/kontakt/">Kontakt</a>
+    </li>
+  </ul>
+</nav>

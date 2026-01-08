@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<section class="content-section talks">
+  <h1>{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <div class="talk-topics">
+    <h3>Themen</h3>
+    <ul>
+      <li>Identität & Rollenbilder</li>
+      <li>Muttersein & Selbstbild</li>
+      <li>Stimme finden & Raum einnehmen</li>
+    </ul>
+  </div>
+
+  {{ partial "cta.html" . }}
+</section>
+
+{{ end }}

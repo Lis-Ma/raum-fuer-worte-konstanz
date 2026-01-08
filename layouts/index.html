@@ -1,0 +1,20 @@
+{{ define "main" }} {{ partial "hero.html" . }}
+
+<section class="content-section intro">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</section>
+
+<!-- <section id="about" class="content-section">
+    <h3>{{ .Params.about_title }}</h3>
+    <p>{{ .Params.about_text | safeHTML }}</p>
+  </section>
+
+  <section id="leistungen" class="content-section">
+    <h3>{{ .Params.leistungen_title }}</h3>
+    {{ range .Params.leistungen_items }}
+    <p><strong>{{ .title }}:</strong> {{ .text }}</p>
+    {{ end }}
+  </section> -->
+
+{{ partial "offer-overview.html" . }} {{ partial "cta.html" . }} {{ end }}
