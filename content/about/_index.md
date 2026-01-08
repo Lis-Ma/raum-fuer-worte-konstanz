@@ -1,5 +1,7 @@
 ---
 title: "Über mich"
+hero_title: "Hi, ich bin Xenia."
+hero_image: "images/portrait.jpg"
 ---
 
 Ich glaube daran, dass jede Stimme zählt.
