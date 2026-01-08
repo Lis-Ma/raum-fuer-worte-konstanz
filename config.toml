@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://github.com/Lis-Ma/raum-fuer-worte-konstanz/"
 languageCode = "de-de"
 title = "Raum für Worte"
 theme = "sundai-lite"
