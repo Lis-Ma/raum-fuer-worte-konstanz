@@ -1,11 +1,7 @@
-{{ define "main" }}
+{{ define "main" }} {{ partial "hero-small.html" . }}
 
 <section class="content-section about">
-  <h1>{{ .Title }}</h1>
-  about
-  <div class="about-image">
-    <img src="/images/portrait.jpg" alt="Portrait" />
-  </div>
+  <h1>{{ .Params.hero_title }}</h1>
 
   <div class="about-text">{{ .Content }}</div>
 

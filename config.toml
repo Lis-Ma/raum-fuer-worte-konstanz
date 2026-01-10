@@ -7,9 +7,13 @@ canonifyURLs = false
 
 [params]
   subtitle = "Reden, die bewegen – über Identität, Mutterschaft und Leben"
-  accent = "#c9a66b"
-  bg = "#fefaf2"
+
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
