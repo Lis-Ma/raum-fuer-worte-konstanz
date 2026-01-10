@@ -109,7 +109,7 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.2); // leicht transparent
+  background: rgba(60, 60, 60, 0.2); // leicht transparent
   backdrop-filter: blur(8px); // optional: verschwommenes Menü
   transition: background 0.3s ease;
 
@@ -179,18 +179,22 @@ h3 {
       padding: 0;
 
       li a {
-        color: $accent;
+        color: $white-smoke;
         transition: all 0.3s ease;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
         &:hover {
-          color: $carrot-orange;
+          color: $powder-blue;
+          // font-weight: 600;
+          border-bottom: 2px solid $powder-blue;
         }
       }
     }
 
     li.active a {
-      color: $carrot-orange; /* z. B. die Akzentfarbe */
+      color: $powder-blue; /* z. B. die Akzentfarbe */
       font-weight: 600;
-      border-bottom: 2px solid $carrot-orange;
+      border-bottom: 2px solid $powder-blue;
       padding-bottom: 2px;
     }
 
@@ -200,7 +204,7 @@ h3 {
       top: 100%;
       left: 0;
       right: 0;
-      background: $white-smoke;
+      background: $dusty-olive;
       flex-direction: column;
       align-items: center;
       padding: 1.5rem 0;

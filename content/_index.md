@@ -1,6 +1,6 @@
 ---
 title: "Raum für Worte"
-hero_title: "Worte für den Moment, vergangenes und die Zukunft"
+hero_title: "Worte für den Moment, für vergangenes und die Zukunft"
 hero_image: "images/start-hero.jpg"
 ---
 
