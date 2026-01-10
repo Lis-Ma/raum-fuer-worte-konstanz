@@ -1,0 +1,12 @@
+{{ define "main" }} {{ partial "hero-small.html" . }}
+
+<section class="about-layout">
+  <p class="hero-title">{{ .Params.hero_title }}</p>
+
+  <img src="{{ "/about/portrait.jpg" | relURL }}" alt="Portrait von Xenia"
+  class="about-image" loading="lazy" />
+
+  <div class="about-text">{{ .Content }}</div>
+</section>
+
+{{ end }}

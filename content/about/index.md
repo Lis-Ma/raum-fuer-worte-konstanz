@@ -3,8 +3,6 @@ title: "Über mich"
 hero_title: "Hi, ich bin Xenia."
 ---
 
-<img src="portrait.jpg" alt="Portrait" class="about-portrait">
-
 Ich glaube daran, dass jede Stimme zählt.
 
 Meine Arbeit ist aus der Erfahrung entstanden,
