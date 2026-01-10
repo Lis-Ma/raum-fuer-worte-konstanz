@@ -109,7 +109,7 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.2); // leicht transparent
+  background: rgba(60, 60, 60, 0.2); // leicht transparent
   backdrop-filter: blur(8px); // optional: verschwommenes Menü
   transition: background 0.3s ease;
 
@@ -179,18 +179,22 @@ h3 {
       padding: 0;
 
       li a {
-        color: $accent;
+        color: $white-smoke;
         transition: all 0.3s ease;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
         &:hover {
-          color: $carrot-orange;
+          color: $powder-blue;
+          // font-weight: 600;
+          border-bottom: 2px solid $powder-blue;
         }
       }
     }
 
     li.active a {
-      color: $carrot-orange; /* z. B. die Akzentfarbe */
+      color: $powder-blue; /* z. B. die Akzentfarbe */
       font-weight: 600;
-      border-bottom: 2px solid $carrot-orange;
+      border-bottom: 2px solid $powder-blue;
       padding-bottom: 2px;
     }
 
@@ -200,7 +204,7 @@ h3 {
       top: 100%;
       left: 0;
       right: 0;
-      background: $white-smoke;
+      background: $dusty-olive;
       flex-direction: column;
       align-items: center;
       padding: 1.5rem 0;
@@ -236,72 +240,42 @@ h3 {
 /* -------------------------------------------
    Hero Section
 ------------------------------------------- */
-// .hero {
-//   background-image: url("/images/hero.jpg");
-//   background-size: cover;
-//   background-position: center;
-//   min-height: 60vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   color: #fff;
-//   position: relative;
-//   overflow: hidden;
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     inset: 0;
-//     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25));
-//     z-index: 1;
-//   }
-
-//   .hero-inner {
-//     position: relative;
-//     z-index: 2;
-//     max-width: 1100px;
-//     padding: 4rem 1rem;
-
-//     p {
-//       font-size: 1.6rem;
-//       margin: 0;
-//       color: rgba(255, 255, 255, 0.95);
-//       letter-spacing: 1px;
-//     }
-
-//     .hero-animation .soft-words {
-//       display: inline-flex;
-//       align-items: center;
-//       position: relative;
-//       height: 1em;
-
-//       span {
-//         position: absolute;
-//         top: 1rem;
-//         left: 0;
-//         opacity: 0;
-//         animation: softFade 10s infinite;
-
-//         &:nth-child(1) {
-//           animation-delay: 0s;
-//         }
-//         &:nth-child(2) {
-//           animation-delay: 2.5s;
-//         }
-//         &:nth-child(3) {
-//           animation-delay: 5s;
-//         }
-//         &:nth-child(4) {
-//           animation-delay: 7.5s;
-//         }
-//       }
-//     }
-//   }
 
 .hero-header {
   position: relative;
   width: 100%;
   height: 100vh; // fullscreen initial
+
+  background-size: cover;
+  background-position: center;
+  background-color: $dusty-olive; // Lade-Fallbackfarbe
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+.hero-header-small {
+  position: relative;
+  width: 100%;
+  height: 7rem; // verkürzt für Unterseiten
 
   background-size: cover;
   background-position: center;
@@ -435,6 +409,49 @@ section {
   }
   a:hover {
     color: $apricot-cream;
+  }
+}
+
+/* -------------------------------------------
+   About Me
+------------------------------------------- */
+
+.about-layout {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-text p {
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    max-width: 240px;
+    margin-bottom: 1.5rem;
   }
 }
 
