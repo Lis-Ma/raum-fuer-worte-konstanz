@@ -1,23 +1,27 @@
 <nav class="main-nav">
   <ul>
-    <li class="{{ if eq .RelPermalink "/" }}active{{ end }}">
-      <a href="/">Start</a>
+    <li class="{{ if .IsHome }}active{{ end }}">
+      <a href="{{ "/" | relURL }}">Start</a>
     </li>
-  
-    <li class="{{ if eq .RelPermalink "/reden/" }}active{{ end }}">
-      <a href="/reden/">Reden</a>
+
+    <li class="{{ if eq .Section "reden" }}active{{ end }}">
+      <a href="{{ "/reden/" | relURL }}">Reden</a>
     </li>
-    <li class="{{ if eq .RelPermalink "/coaching-seminare/" }}active{{ end }}">
-      <a href="/coaching-seminare/">Coaching & Seminare</a>
+
+    <li class="{{ if eq .Section "coaching-seminare" }}active{{ end }}">
+      <a href="{{ "/coaching-seminare/" | relURL }}">Coaching & Seminare</a>
     </li>
-    <li class="{{ if eq .RelPermalink "/about/" }}active{{ end }}">
-      <a href="/about/">Über mich</a>
+
+    <li class="{{ if eq .Section "about" }}active{{ end }}">
+      <a href="{{ "/about/" | relURL }}">Über mich</a>
     </li>
-    <li class="{{ if eq .RelPermalink "/blog/" }}active{{ end }}">
-      <a href="/blog/">Blog</a>
+
+    <li class="{{ if eq .Section "blog" }}active{{ end }}">
+      <a href="{{ "/blog/" | relURL }}">Blog</a>
     </li>
-    <li class="{{ if eq .RelPermalink "/kontakt/" }}active{{ end }}">
-      <a href="/kontakt/">Kontakt</a>
+
+    <li class="{{ if eq .Section "kontakt" }}active{{ end }}">
+      <a href="{{ "/kontakt/" | relURL }}">Kontakt</a>
     </li>
   </ul>
 </nav>
